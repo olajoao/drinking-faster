@@ -27,11 +27,11 @@ yarn dev -o
 ## Requisitos técnicos do projeto
 
 1. Dado que sou um usuário eu quero visualizar as categorias de bebidas
-  1.1 Ao escolher uma categoria eu devo visualizar a lista das bebidas dessa categoria.
+* Ao escolher uma categoria eu devo visualizar a lista das bebidas dessa categoria.
 
 2. Dado que sou um usuário eu quero ver os detalhes da bebida.
-  2.1 A aplicação deve apresentar a imagem da bebida escolhida;
-  2.2 A aplicação deve apresentar a instrução da bebida escolhida.
+* A aplicação deve apresentar a imagem da bebida escolhida;
+* A aplicação deve apresentar a instrução da bebida escolhida.
 
 3. Dado que sou um usuário eu quero pesquisar uma bebida específica através de um campo de busca.**(opcional)**
 
