@@ -1,7 +1,11 @@
 <template>
   <div class="relative">
-    <aside class="w-52 border-r-2 border-neutral-100 dark:border-faster-light-blue/20 hidden md:block sticky top-10">
-      <h2 class="text-2xl text-faster-blue dark:text-faster-light-blue font-semibold mb-4">
+    <aside
+      class="w-52 border-r-2 border-neutral-100 dark:border-faster-light-blue/20 hidden md:block sticky top-10"
+    >
+      <h2
+        class="text-2xl text-faster-blue dark:text-faster-light-blue font-semibold mb-4"
+      >
         Categories
       </h2>
       <nav>
@@ -39,7 +43,11 @@
       </nav>
     </aside>
     <aside class="md:hidden px-5 sm:px-0 my-5">
-      <h2 class="text-lg text-faster-blue dark:text-faster-light-blue font-semibold mb-4">Categories</h2>
+      <h2
+        class="text-lg text-faster-blue dark:text-faster-light-blue font-semibold mb-4"
+      >
+        Categories
+      </h2>
       <nav>
         <select
           name="categories"
@@ -48,6 +56,13 @@
           v-model="selectedOption"
           @change="getDrinksByCategory(selectedOption)"
         >
+          <option
+            class="text-faster-blue"
+            v-if="favoriteDrinks && favoriteDrinks.length > 0"
+            value="favorites"
+          >
+            Favorites <span>({{ favoriteDrinks.length }})</span>
+          </option>
           <option
             class="text-faster-blue"
             v-for="(category, index) in categories"
@@ -81,6 +96,8 @@ const activeItem = ref("");
 const selectedOption = ref("Ordinary Drink");
 
 async function getDrinksByCategory(category: string) {
+  if (category === "favorites") return showFavoriteList();
+  
   activeItem.value = selectedCategory(category)?.strCategory ?? "";
 
   category = useFormatName(category);

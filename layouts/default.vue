@@ -1,6 +1,6 @@
 <template>
   <main :class="{ dark: darkMode }" class="min-h-screen">
-    <div class="dark:bg-black/95">
+    <div class="dark:bg-black/95 min-h-screen">
       <FasterHeader />
       <section>
         <div class="container mx-auto">
