@@ -64,14 +64,19 @@ yarn dev -o
 
 Devido ao requisito número 1 e 1.1, a escolha do menu lateral para listar as categorias 
 facilita a visualização das mesmas, evitando cliques extras para alcançá-las.
+![image](https://github.com/olajoao/drinking-faster/assets/55474322/6099b7dc-d653-4ce2-9493-b2951005db66)
 
-A visualização do item em uma nova página abre possibilidades de instigar o usuário a procurar novos items dispostos na tela.
+
+A visualização do item em uma nova página aumenta a sensação de imersão do usuário no aplicativo
 
 ### Paleta de cores:
 
 As cores foram coletadas da [Faster](https://fstr.co)
-- 'faster-pink': '#F24B78',
-- 'faster-blue': '#030140'
+- "faster-pink": "#F24B78"
+- "faster-blue": "#030140"
+- "faster-light-blue": "#F3F9FE"
+- "faster-light-pink": "#FFE2EA"
+  
 
 Elas estão adicionadas as configurações do Tailwindcss, para utilizar basta escolher o utilitário e adicionar a cor
 ```html
