@@ -8,23 +8,23 @@ O projeto se encontra hospedado na Vercel para facilitar visualização.
 
 ## Instalação
 
-Clonar este repositório
-navegar até a pasta onde o projeto foi clonado
-baixar as dependências:
+- Clonar este repositório
+- navegar até a pasta onde o projeto foi clonado
+- baixar as dependências:
 ```bash
 # yarn
 yarn install
 ```
 
-executar servidor localmente: 
+- executar servidor localmente: 
 ```bash
 # yarn
 yarn dev -o 
 ```
 
-Acessar a URL no seu navegador `http://localhost:3000`:
+- acessar a URL no seu navegador `http://localhost:3000`:
 
-## Requisitos técnicos
+## Requisitos técnicos do projeto
 
 1. Dado que sou um usuário eu quero visualizar as categorias de bebidas
   1.1 Ao escolher uma categoria eu devo visualizar a lista das bebidas dessa categoria.
@@ -73,16 +73,16 @@ As cores foram coletadas da [Faster](https://fstr.co)
 - 'faster-pink': '#F24B78',
 - 'faster-blue': '#030140'
 
-Elas estão adicionadas as configurações do Tailwindcss, para utilizar basta escolher o utilitário e a adicionar a cor
+Elas estão adicionadas as configurações do Tailwindcss, para utilizar basta escolher o utilitário e adicionar a cor
 ```html
 <h1 class="text-faster-pink bg-faster-blue">Hello World</h1>
 ```
 
 ### Tailwindd css
 
-Devido ao desejo de agilizar o processo de prototipação do desafio o Tailwind foi escolhido.
-Outro motivos para escolher essa ferramenta:
-- fácil implementação do dark mode
+Escolhido devido ao desejo de agilizar o processo de prototipação do desafio.
+Outro motivos para escolher a ferramenta:
+- Fácil implementação do dark mode
 - Flexibilidade
 - Manutenibilidade
 
