@@ -39,24 +39,24 @@ yarn dev -o
 
 ### Obrigatórios
 
-[x] Criar documentação assertiva para a execução e apresentação do projeto no README;
-[x] Utilizar typescript;
-[x] Criar nome para aplicação;
-[x] Tratamento básicos de erros da API;( 500, 400 )
-[x] Fácil de buildar e executar a aplicação para testes
+- [x] Criar documentação assertiva para a execução e apresentação do projeto no README;
+- [x] Utilizar typescript;
+- [x] Criar nome para aplicação;
+- [x] Tratamento básicos de erros da API;( 500, 400 )
+- [x] Fácil de buildar e executar a aplicação para testes
 
 ### Opcionais
 
-[x] Tratamento para rotas que não existem;
-[x] Aplicação deve ser responsiva;
-[] Escrever testes;
+- [x] Tratamento para rotas que não existem;
+- [x] Aplicação deve ser responsiva;
+- [] Escrever testes;
 
 ### Diferenciais
 
-[x] Documentar decisões tomadas durante o desafio técnico.
-[x] Paleta de cores única;
-[x] UX agradável;
-[x] Criar commits semânticos.
+- [x] Documentar decisões tomadas durante o desafio técnico.
+- [x] Paleta de cores única;
+- [x] UX agradável;
+- [x] Criar commits semânticos.
 
 ## Decisões gerais
 
