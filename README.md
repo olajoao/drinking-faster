@@ -4,7 +4,7 @@ Aplicação NUXT consumindo a API [TheCocktailDB](https://www.thecocktaildb.com/
 
 O Intuito foi de apresentar algumas habilidades gerais no frontend.
 O projeto se encontra hospedado na Vercel para facilitar visualização.
-[Você pode acessar clicando aqui](https://lorem.com)
+[Você pode acessar clicando aqui](https://drinking-faster.vercel.app/)
 
 ## Instalação
 
