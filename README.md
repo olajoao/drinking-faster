@@ -1,63 +1,91 @@
-# Nuxt 3 Minimal Starter
+# Drinking Faster
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Aplicação NUXT consumindo a API [TheCocktailDB](https://www.thecocktaildb.com/api.php).
 
-## Setup
+O Intuito foi de apresentar algumas habilidades gerais no frontend.
+O projeto se encontra hospedado na Vercel para facilitar visualização.
+[Você pode acessar clicando aqui](https://lorem.com)
 
-Make sure to install the dependencies:
+## Instalação
 
+Clonar este repositório
+navegar até a pasta onde o projeto foi clonado
+baixar as dependências:
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
 # yarn
 yarn install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
+executar servidor localmente: 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
 # yarn
-yarn dev
+yarn dev -o 
 ```
 
-## Production
+Acessar a URL no seu navegador `http://localhost:3000`:
 
-Build the application for production:
+## Requisitos técnicos
 
-```bash
-# npm
-npm run build
+1. Dado que sou um usuário eu quero visualizar as categorias de bebidas
+  1.1 Ao escolher uma categoria eu devo visualizar a lista das bebidas dessa categoria.
 
-# pnpm
-pnpm run build
+2. Dado que sou um usuário eu quero ver os detalhes da bebida.
+  2.1 A aplicação deve apresentar a imagem da bebida escolhida;
+  2.2 A aplicação deve apresentar a instrução da bebida escolhida.
 
-# yarn
-yarn build
+3. Dado que sou um usuário eu quero pesquisar uma bebida específica através de um campo de busca.**(opcional)**
+
+4. Dado que sou um usuário eu posso favoritar uma bebida para facilmente acessá-la no futuro.**(opcional)**
+
+### Obrigatórios
+
+[x] Criar documentação assertiva para a execução e apresentação do projeto no README;
+[x] Utilizar typescript;
+[x] Criar nome para aplicação;
+[x] Tratamento básicos de erros da API;( 500, 400 )
+[x] Fácil de buildar e executar a aplicação para testes
+
+### Opcionais
+
+[x] Tratamento para rotas que não existem;
+[x] Aplicação deve ser responsiva;
+[] Escrever testes;
+
+### Diferenciais
+
+[x] Documentar decisões tomadas durante o desafio técnico.
+[x] Paleta de cores única;
+[x] UX agradável;
+[x] Criar commits semânticos.
+
+## Decisões gerais
+
+### Design
+
+Devido ao requisito número 1 e 1.1, a escolha do menu lateral para listar as categorias 
+facilita a visualização das mesmas, evitando cliques extras para alcançá-las.
+
+A visualização do item em uma nova página abre possibilidades de instigar o usuário a procurar novos items dispostos na tela.
+
+### Paleta de cores:
+
+As cores foram coletadas da [Faster](https://fstr.co)
+- 'faster-pink': '#F24B78',
+- 'faster-blue': '#030140'
+
+Elas estão adicionadas as configurações do Tailwindcss, para utilizar basta escolher o utilitário e a adicionar a cor
+```html
+<h1 class="text-faster-pink bg-faster-blue">Hello World</h1>
 ```
 
-Locally preview production build:
+### Tailwindd css
 
-```bash
-# npm
-npm run preview
+Devido ao desejo de agilizar o processo de prototipação do desafio o Tailwind foi escolhido.
+Outro motivos para escolher essa ferramenta:
+- fácil implementação do dark mode
+- Flexibilidade
+- Manutenibilidade
 
-# pnpm
-pnpm run preview
 
-# yarn
-yarn preview
-```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
